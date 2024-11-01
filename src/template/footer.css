@@ -1,0 +1,64 @@
+@import 'footer/social.css';
+@import 'footer/location.css';
+@import 'footer/contact.css';
+@import 'footer/etc.css';
+
+footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+    padding: 2em;
+    /* border: 1px solid yellow; */
+    font-size: 16px;
+  }
+
+  .container{
+    margin-bottom: 0px;
+  }
+
+  @media(min-width: 800px){
+    nav button{
+      display: none;
+    }
+    aside{
+      display: none;
+    }
+    
+    .container{
+      display: flex;
+      /* border: 1px solid red; */
+      grid-template-columns: repeat(auto, 3);
+      gap: 20px;
+      justify-content: center;
+    }
+  } 
+
+/*==== Mengubah ketika berada di tampilan mobile ====*/
+  @media(max-width: 800px){
+    body{
+      grid-template-columns: 1fr;
+    }
+  
+    aside{
+      position: fixed;
+      width: 300px;
+      display: none;
+    }
+
+    button{
+      display: none;
+    }
+
+    .container{
+      display: grid;
+      /* border: 1px solid red; */
+      grid-template-columns: repeat(auto, 3);
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .show{
+      display: none;
+    }
+  }
+  

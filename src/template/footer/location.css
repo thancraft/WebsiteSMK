@@ -1,0 +1,16 @@
+.location-container {
+    /* border: 1px solid #2196F3; */
+    padding: 5px;
+  }
+
+#maps-container a:visited, a:link{
+    text-decoration: none;
+    color: white;
+  }
+  
+#maps-container a:hover, a:active{
+    text-decoration: underline;
+    text-decoration-color: rgb(197, 197, 203);
+  }
+  
+  
